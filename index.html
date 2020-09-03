@@ -125,7 +125,7 @@
 			
 			document.getElementById('light-on').addEventListener('click', function() {
 				var ts_api_key = "6A4PKEBLE7TSBJMW";
-				var url = "http://api.thingspeak.com/update?api_key="+ ts_api_key + "&field1=1"
+				var url = "https://api.thingspeak.com/update?api_key="+ ts_api_key + "&field1=1"
 				$.getJSON(url, function(data) {
 					console.log(data);
 				});
@@ -133,7 +133,7 @@
 		
 			document.getElementById('light-off').addEventListener('click', function() {
 				var ts_api_key = "6A4PKEBLE7TSBJMW";
-				var url = "http://api.thingspeak.com/update?api_key="+ ts_api_key + "&field1=0"
+				var url = "https://api.thingspeak.com/update?api_key="+ ts_api_key + "&field1=0"
 				$.getJSON(url, function(data) {
 					console.log(data);
 				});
